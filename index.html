@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
     <meta charset="utf-8">
-    <title>The area of a traingle</title>
-    <script>
-    var side1 = 5;
-    var side2 = 6;
-    var side3 = 7;
-    var s = (side1 + side2 + side3)/2;
-    var area = Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));
-    console.log(" Area: ", area);
-    </script>
-</head>
-    <body>
-        <h3>The area of a triangle</h3>
-    </body>
+        <title>Find Leap Year</title>
+            <script>
+                year = window.prompt("Input a Year: ");
+                x = (year % 100 === 0) ? (year % 400 ===0) : (year % 4 ===0);
+                console.log("Is "+year+" a leap year? " + x);
+            </script>
+    </head>
+        <body>
+            <h3>Find Leap Year</h3>
+        </body>
 </html>
